@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .hi {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .name {
+        font-weight: 900;
+        font-size: 2.5rem;
+        margin-top: -8px;
+        .orange {
+            color: $fire-opal;
+        }
+    }
+
+    .description {
+        font-weight: 300;
+    }
+
+    .techStack {
+        margin-top: 8px;
+        height: 1.2rem;
+    }
+}

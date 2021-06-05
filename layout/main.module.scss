@@ -1,0 +1,17 @@
+@import "../styles/colors.scss";
+@import "../styles/typography.scss";
+
+.nav {
+    .title {
+        color: $fire-opal;
+        text-align: center;
+        margin: 1.2rem auto;
+    }
+    border-bottom: 1px solid $davys-gray;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+}
