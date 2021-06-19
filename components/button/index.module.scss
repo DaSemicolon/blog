@@ -1,15 +1,14 @@
 @import "../../styles/colors.scss";
 
 .container {
-    height: 50px;
     border: none;
     margin: 0;
     background-color: $fire-opal;
     border-radius: 5px;
     color: white;
-    font-weight: 900;
-    font-size: 2.5rem;
-
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 10px 30px;
     .secondary {
         background-color: transparent;
         color: $fire-opal;

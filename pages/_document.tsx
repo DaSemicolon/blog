@@ -28,11 +28,11 @@ class MyDocument extends Document {
           <link
             rel="preload"
             as="style"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;700&display=swap"
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;700&display=swap"
             media="print"
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
@@ -41,7 +41,7 @@ class MyDocument extends Document {
           <noscript>
             <link
               rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300;1,400&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;700&display=swap"
             />
           </noscript>
         </Head>

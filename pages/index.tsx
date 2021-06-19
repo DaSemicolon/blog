@@ -14,10 +14,12 @@ const Home: NextPage = () =>     {
       <div className={style.container}>
         <div className={style.introContainer}>
           <Intro />
+        </div>
+        <div className={style.button}>
           <Button type="PRIMARY" onClick={(): void => {
             alert("hello");
-          }} >Hire Me</Button> 
-        </div>
+          }} >Hire Me</Button>
+        </div> 
       </div>
     </MainLayout>
   );
