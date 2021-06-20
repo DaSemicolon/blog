@@ -32,3 +32,13 @@ h2 {
   margin: 0;
   padding: 0;
 }
+
+p {
+  @include body();
+}
+
+pre {
+  background: $davys-gray; 
+  padding: 1rem;
+  border-radius: 5px;
+}

@@ -1,0 +1,19 @@
+@import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
+
+.container {
+  background: $davys-gray;
+  padding: 3px 10px;
+  width: max-content;
+  border-radius: 5px;
+
+  .text {
+    @include subtitle();
+    color: $backdrop-light;
+    font-size: 0.8rem;
+
+    &::before {
+      content: "#";
+    }
+  }
+}

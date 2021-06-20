@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+
+.author {
+  color: $davys-gray;
+  font-weight: 200;
+}
+
+.tagContainer {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
