@@ -12,10 +12,10 @@ const Post: NextPage<{blogPost: PrismicNodeBlogPost}> = ({blogPost}) => {
     <MainLayout>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="Learn how to use the most common JavaScript array methods, such as map, filter, and reduce. We'll go over each method in detail, including examples and manual alternatives. You'll also learn when not to employ these techniques." />
+        <meta name="description" content={RichText.asText(blogPost.description)} />
       </Head>
-      <h1>{title}</h1>
-      <div className={style.author}>{RichText.asText(blogPost.author.name)} | {new Date(blogPost._meta.firstPublicationDate).toDateString()}</div>
+      <h1 className={style.title}>{title}</h1>
+      <div className={style.author}>{RichText.asText(blogPost.authors.name)} | {new Date(blogPost._meta.firstPublicationDate).toDateString()}</div>
       {
         <div className={style.tagContainer}>
           {
@@ -24,7 +24,6 @@ const Post: NextPage<{blogPost: PrismicNodeBlogPost}> = ({blogPost}) => {
             ))
           }
         </div>
-          
       }
       {RichText.render(blogPost.content)}
     </MainLayout>);

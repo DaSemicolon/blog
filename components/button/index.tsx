@@ -2,7 +2,7 @@ import style from "./index.module.scss";
 
 interface ButtonProps {
   type: "PRIMARY" | "SECONDARY";
-  onClick: () => void;
+  onClick?: () => void;
   disabled?: boolean;
 }
 const Button: React.FC<ButtonProps> = ({type, onClick, children, disabled}) => {

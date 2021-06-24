@@ -4,12 +4,14 @@ import style from "./index.module.scss";
 const Intro: React.FC = () => {
   const descriptionRef = createRef<HTMLDivElement>(); 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       descriptionRef.current.classList.toggle(style.description);
       setTimeout(() => {
         descriptionRef.current.classList.toggle(style.description);
       }, 500);
     }, 7000);
+
+    return () => clearInterval(interval);
   }, []);
   return (
     <div className={style.container}>

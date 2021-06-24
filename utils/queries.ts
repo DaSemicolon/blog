@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-export const getDocumentIds = gql`
+export const documentIds = gql`
   query getBlogPosts($after: String) {
     allBlogPosts(after: $after) {
       totalCount
@@ -20,14 +20,34 @@ export const getDocumentIds = gql`
   }
 `;
 
-export const getDocumentByUid = gql`
+export const recentBlogPosts = gql`
+  query getRecentBlogPosts ($after: String) {
+    allBlogPosts(sortBy: meta_firstPublicationDate_DESC, after: $after) {
+      edges {
+        node {
+          title
+          description
+          stack_icon
+          _meta {
+            tags
+            uid
+            firstPublicationDate
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const documentByUid = gql`
   query getBlogPostByUid($uid: String!) {
     blogPost(uid: $uid, lang: "en-gb") {
       title
       stack_icon
       cover_image
       content
-      author {
+      description
+      authors {
         ...on Author {
           name
         }
