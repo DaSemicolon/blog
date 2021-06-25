@@ -9,6 +9,9 @@ const MainLayout: React.FC = ({children}) => (
     <div className={style.container}>
       {children}
     </div>
+    <footer className={style.footer}>
+      <p>made with <span>❤</span> by Kavindu Wijesuriya</p>
+    </footer>
   </div> 
 );
 

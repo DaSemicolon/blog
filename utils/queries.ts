@@ -47,6 +47,7 @@ export const documentByUid = gql`
       cover_image
       content
       description
+      codepen
       authors {
         ...on Author {
           name

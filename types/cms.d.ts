@@ -20,6 +20,7 @@ declare type PrismicNodeBlogPost = {
   cover_image: any;
   content: any;
   description: any;
+  codepen?: any;
   authors: {
     name: Array<any>
   }

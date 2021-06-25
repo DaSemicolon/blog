@@ -35,7 +35,6 @@ export const getPostByUID = async (uid: string, lang = "en-gb"): Promise<Prismic
       lang
     }
   });
-  console.log("post", post.data.blogPost.description);
 
   return post.data.blogPost;
 };
