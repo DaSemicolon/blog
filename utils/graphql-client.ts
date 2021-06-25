@@ -6,7 +6,6 @@ export const client = new ApolloClient({
   link: PrismicLink({
     uri: process.env.GRAPHQL_BASEURL, 
     accessToken: process.env.API_ACCESS_TOKEN,
-    repositoryName: "dasemicolondev"
   }),
   cache: new InMemoryCache(), 
 });
