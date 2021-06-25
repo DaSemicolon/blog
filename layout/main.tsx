@@ -2,7 +2,7 @@ import Link from "next/link";
 import style from "./main.module.scss";
 
 const MainLayout: React.FC = ({children}) => (
-  <div>
+  <div className={style.mainContainer}>
     <nav className={style.nav}>
       <Link href="/"><h1 className={style.title}>dasemicolon.dev</h1></Link>
     </nav>
