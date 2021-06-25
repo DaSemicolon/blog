@@ -10,7 +10,7 @@ const MainLayout: React.FC = ({children}) => (
       {children}
     </div>
     <footer className={style.footer}>
-      <p>built from scratch with <span>❤</span> by Kavindu Wijesuriya</p>
+      <p>built with <span>❤</span> from scratch by <strong>Kavindu Wijesuriya</strong></p>
     </footer>
   </div> 
 );
