@@ -5,7 +5,8 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 export const client = new ApolloClient({
   link: PrismicLink({
     uri: process.env.GRAPHQL_BASEURL, 
-    accessToken: process.env.API_ACCESS_TOKEN
+    accessToken: process.env.API_ACCESS_TOKEN,
+    repositoryName: "dasemicolon.dev"
   }),
   cache: new InMemoryCache(), 
 });
