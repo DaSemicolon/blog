@@ -13,6 +13,7 @@ const Home: NextPage<{recentPosts: Array<PrismicNodeBlogPost>}> = ({recentPosts}
     <MainLayout>
       <Head>
         <title>dasemicolon.dev</title>
+        <meta name="description" content="Hi! I'm Kavindu, A full stack developer specializing in the front-end. I have 7 years of experience developing scalable web and mobile apps using technologies like JavaScript, TypeScript, NodeJS, GraphQL, React, ReactNative, MySQL, MongoDB, AWS and many more." />
       </Head>
       <div className={style.container}>
         <div className={style.introContainer}>

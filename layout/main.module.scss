@@ -2,12 +2,16 @@
 @import "../styles/typography.scss";
 
 .mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   .nav {
     cursor: pointer;
+    padding: 1.2rem 0;
     .title {
       color: $fire-opal;
       text-align: center;
-      margin: 1.2rem auto;
     }
     border-bottom: 1px solid $davys-gray;
   }

@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     TagManager.initialize(tagManagerArgs);
   });
-
+  
   return <Component {...pageProps} />;
 }
 

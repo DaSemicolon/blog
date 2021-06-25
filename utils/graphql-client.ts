@@ -2,7 +2,6 @@ import { PrismicLink } from "apollo-link-prismic";
 import ApolloClient from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
 
-console.log("envv", process.env.GRAPHQL_BASEURL);
 export const client = new ApolloClient({
   link: PrismicLink({
     uri: process.env.GRAPHQL_BASEURL, 
