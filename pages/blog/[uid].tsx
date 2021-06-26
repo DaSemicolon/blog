@@ -14,7 +14,8 @@ const Post: NextPage<{blogPost: PrismicNodeBlogPost}> = ({blogPost}) => {
       <Head>
         <title>{title}</title>
         <meta name="description" content={RichText.asText(blogPost.description)} />
-        <meta property="og:image" content={blogPost.stack_icon.url} />
+        <meta property="og:title" content={title} />
+        <meta property="og:image" content={blogPost.cover_image.url} />
         <meta property="og:description" content={RichText.asText(blogPost.description)} />
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
       </Head>
