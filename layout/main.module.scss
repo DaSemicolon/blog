@@ -10,6 +10,7 @@
     padding: 1.2rem 0;
     position: sticky;
     top: 0;
+    z-index: 100;
     background: $backdrop-dark;
     .title {
       cursor: pointer;
@@ -21,10 +22,13 @@
 
   .container {
     padding-top: 1.2rem;
-    padding-bottom: 100px;
     margin: 0 auto;
     width: 90%;
     max-width: 800px;
+
+    .fullWidth {
+      width: 100%;
+    }
   }
 
   .footer {

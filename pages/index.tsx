@@ -26,7 +26,7 @@ const Home: NextPage<{recentPosts: Array<PrismicNodeBlogPost>}> = ({recentPosts}
           <Intro />
         </div>
         <div className={style.button}>
-          <Link href="/contact">
+          <Link href="/about">
             <Button type="PRIMARY">Hire Me</Button>
           </Link>
         </div> 

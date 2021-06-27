@@ -1,14 +1,12 @@
 .container {
-  height: 100vh;
-  overflow-y: scroll;
-  scrollbar-color: black;
-  scroll-snap-type: y mandatory;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  iframe {
+    width: 600px;
 
-  .section {
-    height: 100vh;
-    scroll-snap-align: start;
+    @media (max-width: 600px) {
+      width: 300px;
+    }
   }
 }
