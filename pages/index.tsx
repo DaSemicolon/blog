@@ -17,7 +17,7 @@ const Home: NextPage<{recentPosts: Array<PrismicNodeBlogPost>}> = ({recentPosts}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dasemicolon.dev/" />
         <meta property="og:title" content="dasemicolon.dev" />
-        <meta property="og:image" content="/images/main-banner.png" />
+        <meta property="og:image" content="https://images.prismic.io/dasemicolondev/d35a9248-8cbc-4d83-9aaf-7d6ddd6dade6_main-banner.png" />
         <meta property="og:description" content="Hi! I'm Kavindu, A full stack developer specializing in the front-end. I have 7 years of experience developing scalable web and mobile apps using technologies like JavaScript, TypeScript, NodeJS, GraphQL, React, ReactNative, MySQL, MongoDB, AWS and many more." />
         <meta property="og:site_name" content="dasemicolon.dev" />
       </Head>
