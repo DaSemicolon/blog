@@ -6,13 +6,14 @@
   cursor: pointer;
   padding-bottom: 10px;
   transition: all 500ms ease-in;
+  border-bottom: 1px solid $davys-gray;
   &:hover {
     border-bottom: 1px solid $fire-opal;
     .title {
       color: $fire-opal;
     }
   }
-  
+
   .stackImage {
     flex: 1;
     margin-right: 10px;
@@ -26,7 +27,7 @@
     .title {
       @include title();
     }
-    
+
     .tag {
       width: max-content;
       display: flex;
@@ -34,7 +35,8 @@
       margin-bottom: 10px;
     }
 
-    .description, .date {
+    .description,
+    .date {
       @include body();
       font-size: 0.8rem;
     }
@@ -50,4 +52,8 @@
       display: none;
     }
   }
+}
+
+.container + .container {
+  margin-top: 20px;
 }
