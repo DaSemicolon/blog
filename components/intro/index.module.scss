@@ -2,147 +2,147 @@
 @import "../../styles/typography.scss";
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    .item {
-        min-height: 25px;
-    }
+  .item {
+    min-height: 25px;
+  }
 
-    .hi {
-        @include subtitle();
-        font-size: 1.5rem;
-        position: relative;
-    }
+  .hi {
+    @include subtitle();
+    font-size: 1.5rem;
+    position: relative;
+  }
 
-    .name {
-        @include subtitle();
-        font-size: 2.5rem;
-        position: relative;
-        width: fit-content;
-        .orange {
-            @include title();
-            color: $fire-opal;
-        }
+  .name {
+    @include subtitle();
+    font-size: 2.5rem;
+    position: relative;
+    width: fit-content;
+    .orange {
+      @include title();
+      color: $fire-opal;
     }
+  }
 
-    .description {
-        font-weight: 300;
-    }
-    
-    .description::before {
-        content: "";
-        background: $backdrop-dark;
-        color: $backdrop-light;
-        animation: content-full-stack 1s forwards, content-full-stack 350ms 3.6s reverse forwards,
-        content-frontend 1s 4s forwards, content-frontend 350ms 6s reverse forwards;
-    }
+  .description {
+    font-weight: 300;
+  }
 
-    .description::after {
-        content: "_";
-        color: $backdrop-light;
-        animation: hide 500ms infinite;
-    }
-    
-    @keyframes typewriterName {
-        to {
-            left: 100%;
-        }
-    }
+  .description::before {
+    content: "";
+    background: $backdrop-dark;
+    color: $backdrop-light;
+    animation: content-full-stack 1s forwards, content-full-stack 350ms 3.6s reverse forwards,
+      content-frontend 1s 4s forwards, content-frontend 350ms 6s reverse forwards;
+  }
 
-    @keyframes show {
-        to {
-            opacity: 1;
-        }
-    }
+  .description::after {
+    content: "_";
+    color: $backdrop-light;
+    animation: hide 500ms infinite;
+  }
 
-    @keyframes hide {
-        to {
-            opacity: 0;
-        }
+  @keyframes typewriterName {
+    to {
+      left: 100%;
     }
+  }
 
-    @keyframes content-frontend {
-        0% {
-          content: " "
-        }
-        5% {
-          content: "I "
-        }
-        10% {
-          content: "I spe"
-        }
-        20% {
-          content: "I specia"
-        }
-        30% {
-          content: "I speciali"
-        }
-        40% {
-          content: "I specialize "
-        }
-        50% {
-          content: "I specialize in"
-        }
-        60% {
-          content: "I specialize in th"
-        }
-        70% {
-          content: "I specialize in the f"
-        }
-        80% {
-          content: "I specialize in the fron"
-        }
-        90% {
-          content: "I specialize in the front-e"
-        }
-        100% {
-          content: "I specialize in the front-end"
-        }
-      }
-      
-      @keyframes content-full-stack {
-        0% {
-          content: " "
-        }
-        5% {
-          content: "a "
-        }
-        10% {
-          content: "a F"
-        }
-        20% {
-          content: "a Ful"
-        }
-        30% {
-          content: "a Full S"
-        }
-        40% {
-          content: "a Full Stac"
-        }
-        50% {
-          content: "a Full Stack D"
-        }
-        60% {
-          content: "a Full Stack Dev"
-        }
-        70% {
-          content: "a Full Stack Devel"
-        }
-        80% {
-          content: "a Full Stack Develo"
-        }
-        90% {
-          content: "a Full Stack Develope"
-        }
-        100% {
-          content: "a Full Stack Developer"
-        }
+  @keyframes show {
+    to {
+      opacity: 1;
     }
+  }
 
-    .techStack {
-        margin-top: 8px;
-        height: 1.2rem;
+  @keyframes hide {
+    to {
+      opacity: 0;
     }
+  }
+
+  @keyframes content-frontend {
+    1% {
+      content: " ";
+    }
+    5% {
+      content: "I ";
+    }
+    10% {
+      content: "I spe";
+    }
+    20% {
+      content: "I specia";
+    }
+    30% {
+      content: "I speciali";
+    }
+    40% {
+      content: "I specialize ";
+    }
+    50% {
+      content: "I specialize in";
+    }
+    60% {
+      content: "I specialize in th";
+    }
+    70% {
+      content: "I specialize in the f";
+    }
+    80% {
+      content: "I specialize in the fron";
+    }
+    90% {
+      content: "I specialize in the front-e";
+    }
+    100% {
+      content: "I specialize in the front-end";
+    }
+  }
+
+  @keyframes content-full-stack {
+    1% {
+      content: " ";
+    }
+    5% {
+      content: "a ";
+    }
+    10% {
+      content: "a F";
+    }
+    20% {
+      content: "a Ful";
+    }
+    30% {
+      content: "a Full S";
+    }
+    40% {
+      content: "a Full Stac";
+    }
+    50% {
+      content: "a Full Stack D";
+    }
+    60% {
+      content: "a Full Stack Dev";
+    }
+    70% {
+      content: "a Full Stack Devel";
+    }
+    80% {
+      content: "a Full Stack Develo";
+    }
+    90% {
+      content: "a Full Stack Develope";
+    }
+    100% {
+      content: "a Full Stack Developer";
+    }
+  }
+
+  .techStack {
+    margin-top: 8px;
+    height: 1.2rem;
+  }
 }
