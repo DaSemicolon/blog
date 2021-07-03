@@ -17,7 +17,7 @@ const Post: NextPage<{blogPost: PrismicNodeBlogPost}> = ({blogPost}) => {
         <meta property="og:title" content={title} />
         <meta property="og:image" content={blogPost.cover_image.url} />
         <meta property="og:description" content={RichText.asText(blogPost.description)} />
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+        <script async defer src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
       </Head>
       <h1 className={style.title}>{title}</h1>
       <div className={style.author}>{RichText.asText(blogPost.authors.name)} | {new Date(blogPost._meta.firstPublicationDate).toDateString()}</div>
@@ -30,17 +30,18 @@ const Post: NextPage<{blogPost: PrismicNodeBlogPost}> = ({blogPost}) => {
           }
         </div>
       }
-      <RichText render={blogPost.content} htmlSerializer={(type, element, content, children, key) => {
-        let props = {};
-
-        switch(type) {
-        case Elements.preformatted:
-          props = {className: "prettyprint"};
-          return React.createElement('pre', {...props, key}, React.createElement('code', {}, children));
-        default:
-          return null;
-        }
-      }} />
+      <div className={style.content}>
+        <RichText render={blogPost.content} htmlSerializer={(type, element, content, children, key) => {
+          let props = {};
+          switch(type) {
+          case Elements.preformatted:
+            props = {className: "prettyprint"};
+            return React.createElement('pre', {...props, key}, React.createElement('code', {}, children));
+          default:
+            return null;
+          }
+        }} />
+      </div>
       {blogPost.codepen && <div className={style.codepen} dangerouslySetInnerHTML={{__html: blogPost.codepen.html}} />}
     </MainLayout>);
 }; 

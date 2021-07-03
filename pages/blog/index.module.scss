@@ -3,7 +3,14 @@
 .author {
   color: $davys-gray;
 }
-
+.content {
+  img {
+    max-width: 80%;
+  }
+  .block-img {
+    text-align: center;
+  }
+}
 .tagContainer {
   margin-top: 10px;
   display: flex;
