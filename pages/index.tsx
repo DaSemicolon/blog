@@ -1,14 +1,16 @@
 import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Button from "../components/button";
-import PostSummary from "../components/post-summary";
 import Intro from "../components/intro";
+import PostSummary from "../components/post-summary";
 import MainLayout from "../layout/main";
 import { getRecentBlogPosts } from "../utils/blog-post";
 import style from "./index.module.scss";
-import Link from "next/link";
+import {useRouter} from "next/router";
 
-const Home: NextPage<{recentPosts: Array<PrismicNodeBlogPost>}> = ({recentPosts}) =>     {
+
+const Home: NextPage<{recentPosts: Array<PrismicNodeBlogPost>}> = ({recentPosts}) => {
+  const {push} = useRouter();
   return (
     <MainLayout>
       <Head>
@@ -26,9 +28,7 @@ const Home: NextPage<{recentPosts: Array<PrismicNodeBlogPost>}> = ({recentPosts}
           <Intro />
         </div>
         <div className={style.button}>
-          <Link href="/about">
-            <Button type="PRIMARY">Say Hello!</Button>
-          </Link>
+          <Button onClick={() => push("/about") } type="PRIMARY">Say Hello!</Button>
         </div> 
       </div>
       <div>
