@@ -4,8 +4,8 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
+
   .nav {
     padding: 1.2rem 0;
     position: sticky;
@@ -21,6 +21,7 @@
   }
 
   .container {
+    flex: 10;
     padding-top: 1.2rem;
     margin: 0 auto;
     width: 90%;
