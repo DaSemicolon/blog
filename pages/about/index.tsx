@@ -24,10 +24,7 @@ const About: NextPage = () => (
         <div className={style.about}>
           <h1>Kavindu Wijesuriya</h1>
           <p>
-            Kavindu is an experienced, highly efficient and reliable professional who has a broad skill set 
-            for web application development. He has been working with international teams to solve problems for production 
-            engineering teams and to create new applications for startups. Kavindu enjoys working with passionate clients and 
-            he cares a lot about the product that he is building.
+            Innovative and technically minded professional with extensive experience in developing user-friendly web and mobile applications. Repeated success in designing and development of up-to-date, high-quality, and innovative engineering solutions. Experienced in liaising and working closely with international development teams to solve problems and execute software tasks from design to delivery. Skilled in defining and developing tools and systems required to create applications as well as building a dynamic and responsive user interface. Demonstrate solid analytical, technical, and communication skills with the ability to work well in a team environment.
           </p>
           <div className={style.socialIcons}>
             <SocialIcon icon={faLinkedin} link="https://www.linkedin.com/in/kavinduwijesuriya/" text="LinkedIn" />

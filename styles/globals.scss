@@ -1,6 +1,11 @@
 @import "./colors.scss";
 @import "./typography.scss";
 
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
 html,
 body {
   padding: 0;
