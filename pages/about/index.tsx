@@ -1,5 +1,5 @@
-import { faLinkedin, faSkype, faTiktok, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -29,10 +29,7 @@ const About: NextPage = () => (
           <div className={style.socialIcons}>
             <SocialIcon icon={faLinkedin} link="https://www.linkedin.com/in/kavinduwijesuriya/" text="LinkedIn" />
             <SocialIcon icon={faTwitter} link="https://twitter.com/da_semicolon" text="Twitter" />
-            <SocialIcon icon={faTiktok} link="https://www.tiktok.com/@dasemicolon.dev" text="TikTok" />
-            <SocialIcon icon={faSkype} link="https://join.skype.com/invite/eu5yyth61vP7" text="Skype" />
             <SocialIcon icon={faEnvelope} link="mailto:kavinduwijesuriya@gmail.com?subject=Hello Kavindu! I found you through dasemicolon.dev" text="kavinduwijesuriya@gmail.com" />
-            <SocialIcon icon={faPhone} link="tel:441158882234" text="+44 115 888 2234" />
           </div>
         </div>
       </div>
